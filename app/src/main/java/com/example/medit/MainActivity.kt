@@ -15,6 +15,7 @@ import com.example.medit.ui.theme.MeditTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
         setContent {
             MeditTheme {
                 // A surface container using the 'background' color from the theme
@@ -38,6 +39,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     MeditTheme {
-        Greeting("")
+        Greeting("MedIt")
     }
 }
